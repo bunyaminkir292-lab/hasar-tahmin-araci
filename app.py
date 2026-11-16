@@ -72,7 +72,7 @@ def kural_ogrenci(detections, yukseklik, genislik):
     
     # Ölçeklendirme: Ham oranı eğitim verisindeki 0.25 - 0.88 aralığına çekmek için 
     # 15.0 katsayısı ile çarpıyoruz. (Örn: 0.05 * 15 = 0.75 -> Ağır Hasar)
-    skor = ham_oran * 3.0
+    skor = ham_oran * 1.5
     
     # Sonucu 0 ile 1 arasına sıkıştır
     return min(max(skor, 0.0), 1.0)
